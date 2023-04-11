@@ -1,36 +1,36 @@
 
-// //Question 1
-// function createAdder(numberToAdd) {
-//   return function (number) {
-//     return number + numberToAdd;
-//   }
-// }
+//Question 1
+function createAdder(numberToAdd) {
+  return function (number) {
+    return number + numberToAdd;
+  }
+}
 
-// //such as we can take example eg//
-// const addFive = createAdder(5);
-// console.log(addFive(10)); 
-// console.log(addFive(20)); 
-// console.log(addFive(30)); 
-
-
+//such as we can take example eg//
+const addFive = createAdder(5);
+console.log(addFive(10)); 
+console.log(addFive(20)); 
+console.log(addFive(30)); 
 
 
 
-// //Question 2
-// function searchArray(array, value) {
-//   if (array.length === 0) {
-//     return false; 
-//   } else if (array[0] === value) {
-//     return true; 
-//   } else {
-//     return searchArray(array.slice(1), value); 
-//   }
-// }
 
-// // Here we can take example like that//
-// const myArray = [1, 2, 3, 4, 5];
-// console.log(searchArray(myArray, 3)); 
-// console.log(searchArray(myArray, 6)); 
+
+//Question 2
+function searchArray(array, value) {
+  if (array.length === 0) {
+    return false; 
+  } else if (array[0] === value) {
+    return true; 
+  } else {
+    return searchArray(array.slice(1), value); 
+  }
+}
+
+// Here we can take example like that//
+const myArray = [1, 2, 3, 4, 5];
+console.log(searchArray(myArray, 3)); 
+console.log(searchArray(myArray, 6)); 
 
 
 
